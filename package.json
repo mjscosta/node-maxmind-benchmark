@@ -16,7 +16,7 @@
   "dependencies": {
     "benchmark": "^2.1.1",
     "jgeoip": "^0.3.0",
-    "maxmind": "^3.0.2",
+    "maxmind": "^3.1.2",
     "maxmind-db-reader": "^0.2.1",
     "mmdb-reader": "^1.1.0",
     "random-seed": "^0.3.0"
