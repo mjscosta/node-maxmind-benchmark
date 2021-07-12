@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "benchmark": "^2.1.1",
-    "jgeoip": "^0.3.0",
+    "jgeoip": "^0.3.3",
     "maxmind": "^3.0.2",
     "maxmind-db-reader": "^0.2.1",
     "mmdb-reader": "^1.1.0",
