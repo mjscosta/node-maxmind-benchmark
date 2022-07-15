@@ -19,7 +19,7 @@ console.log(
 console.profile("build");
 
 (async () => {
-  var my = await require("../node-maxmind").open(DB_FILE);
+  var my = await require("maxmind").open(DB_FILE);
   var s = Date.now();
   console.log("> Running...");
   for (var i = 0; i < n; i++) {
@@ -47,7 +47,11 @@ console.profile("build");
   console.log(n, "iterations");
   console.log(f - s, "ms");
   console.log(~~(n / ((f - s) / 1000)), "op/sec");
-  console.log(process.memoryUsage());
+
+  // https://www.geeksforgeeks.org/node-js-process-memoryusage-method/
+  for (const [key,value] of Object.entries(process.memoryUsage())){
+    console.log(`Memory usage by ${key}, ${value/1000000}MB `)
+  }
 
   console.profileEnd("build");
 })();

@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node .",
     "profile": "node --inspect-brk profile.js",
+    "profile-mmdb-reader": "node --inspect-brk profile-mmdb-reader.js",
     "profile-plain": "node profile.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +15,7 @@
     "url": "git+https://github.com/runk/node-maxmind-benchmark.git"
   },
   "dependencies": {
+    "@maxmind/geoip2-node": "^3.4.0",
     "benchmark": "^2.1.1",
     "jgeoip": "^0.3.0",
     "maxmind": "^3.0.2",
